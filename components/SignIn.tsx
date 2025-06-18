@@ -26,7 +26,7 @@ export default function SignIn() {
       });
 
       if (response?.ok) {
-        router.push("/");
+        router.push("/explore-events");
       } else {
         throw new Error("Login Failed");
       }
