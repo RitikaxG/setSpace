@@ -80,7 +80,7 @@ const authOptions: NextAuthOptions = {
     signIn: "/signin",
   },
   session: {
-    strategy: "database",
+    strategy: "jwt",
   },
   callbacks: {
     /* If a user logs in via Google/GitHub and their email already exists → it links that provider to the existing user.
